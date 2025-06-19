@@ -3,7 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View, LogBox } from "react-native";
 import CameraScreen from "./screens/CameraScreen";
 import ErrorBoundary from "./components/ErrorBoundary";
-//sami
+//Sami Osama Sami Ghaith
 // Ignore specific warnings
 LogBox.ignoreLogs([
   "Non-serializable values were found in the navigation state",
