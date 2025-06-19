@@ -4,14 +4,13 @@ import { StyleSheet, View, LogBox } from "react-native";
 import CameraScreen from "./screens/CameraScreen";
 import ErrorBoundary from "./components/ErrorBoundary";
 //Sami Osama Sami Ghaith
-// Ignore specific warnings
+
 LogBox.ignoreLogs([
   "Non-serializable values were found in the navigation state",
   "Sending `onAnimatedValueUpdate` with no listeners registered",
   "ViewPropTypes will be removed from React Native",
 ]);
 
-// Global error handler
 const globalErrorHandler = (error, isFatal) => {
   console.error("Global Error Handler:", error, "Fatal:", isFatal);
 };
