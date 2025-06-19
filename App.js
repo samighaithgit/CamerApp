@@ -1,23 +1,21 @@
-import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, LogBox } from 'react-native';
-import CameraScreen from './screens/CameraScreen';
-import ErrorBoundary from './components/ErrorBoundary';
-
+import React from "react";
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, View, LogBox } from "react-native";
+import CameraScreen from "./screens/CameraScreen";
+import ErrorBoundary from "./components/ErrorBoundary";
+//sami
 // Ignore specific warnings
 LogBox.ignoreLogs([
-  'Non-serializable values were found in the navigation state',
-  'Sending `onAnimatedValueUpdate` with no listeners registered',
-  'ViewPropTypes will be removed from React Native',
+  "Non-serializable values were found in the navigation state",
+  "Sending `onAnimatedValueUpdate` with no listeners registered",
+  "ViewPropTypes will be removed from React Native",
 ]);
 
 // Global error handler
 const globalErrorHandler = (error, isFatal) => {
-  console.error('Global Error Handler:', error, 'Fatal:', isFatal);
-  // Here you can add error reporting to a service like Sentry or Crashlytics
+  console.error("Global Error Handler:", error, "Fatal:", isFatal);
 };
 
-// Set up global error handling
 if (!__DEV__) {
   const defaultHandler = ErrorUtils.getGlobalHandler();
   ErrorUtils.setGlobalHandler((error, isFatal) => {
@@ -44,6 +42,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: "#000",
   },
 });
